@@ -54,7 +54,13 @@ namespace DataAccess.Concrete.InMemory
 
         public void Update(Car car)
         {
-            Car updateToCar = _cars.SingleOrDefault(c=> c.Id == car.Id);
+            Car result = _cars.SingleOrDefault(c => c.Id == car.Id);
+            result.ColorId = car.ColorId;
+            result.BrandId = car.BrandId;
+            result.DailyPrice = car.DailyPrice;
+            result.ModelYear = car.ModelYear;
+            result.Description = car.Description;
+
         }
 
        
