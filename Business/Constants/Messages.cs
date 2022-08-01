@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,7 +29,13 @@ namespace Business.Constants
         public static string RentalAdd = "New Car Rental";
         public static string RentalList = "RentalListed";
         public static string MaintenanceTime = "System is in Maintenance";
-
-
+        public static string AuthorizationDenied = "Authorization Denied";
+        public static string UserRegistered = "UserRegistered";
+        public static string UserNotFound = "UserNotFound";
+        public static string PasswordError = "PasswordError";
+        public static string SuccessfulLogin = "SuccessfulLogin";
+        public static string UserAlreadyExists = "UserAlreadyExists";
+        public static string AccessTokenCreated = "AccessTokenCreated";
+        
     }
 }

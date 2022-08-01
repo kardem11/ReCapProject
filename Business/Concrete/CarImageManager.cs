@@ -50,7 +50,7 @@ namespace Business.Concrete
         private IResult CheckIfCarNameExists(int carId)
         {
             var result = _carImageDal.GetAll(c => c.CarId == carId).Count;
-            if (result <=3)
+            if (result >=1)
             {
                 return new ErrorResult(Messages.CarNameInvalid);
             }

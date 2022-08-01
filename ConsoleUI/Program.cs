@@ -2,6 +2,8 @@
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
+using System.Data;
+
 
 namespace ConsoleUI
 {
@@ -23,7 +25,7 @@ namespace ConsoleUI
             {
                 foreach (var car in result.Data)
                 {
-                    Console.WriteLine(car.CarName + "/" + car.ColorName);
+                    Console.WriteLine(car.Id + "/ " + car.CarName + "/" + car.ColorName);
                 }
             }
             else
